@@ -122,6 +122,33 @@ median/fast:
 	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/build
 .PHONY : median/fast
 
+Filter.obj: Filter.cpp.obj
+
+.PHONY : Filter.obj
+
+# target to build an object file
+Filter.cpp.obj:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/Filter.cpp.obj
+.PHONY : Filter.cpp.obj
+
+Filter.i: Filter.cpp.i
+
+.PHONY : Filter.i
+
+# target to preprocess a source file
+Filter.cpp.i:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/Filter.cpp.i
+.PHONY : Filter.cpp.i
+
+Filter.s: Filter.cpp.s
+
+.PHONY : Filter.s
+
+# target to generate assembly for a file
+Filter.cpp.s:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/Filter.cpp.s
+.PHONY : Filter.cpp.s
+
 Image.obj: Image.cpp.obj
 
 .PHONY : Image.obj
@@ -203,6 +230,33 @@ ImageParser.cpp.s:
 	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageParser.cpp.s
 .PHONY : ImageParser.cpp.s
 
+MedianFilter.obj: MedianFilter.cpp.obj
+
+.PHONY : MedianFilter.obj
+
+# target to build an object file
+MedianFilter.cpp.obj:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/MedianFilter.cpp.obj
+.PHONY : MedianFilter.cpp.obj
+
+MedianFilter.i: MedianFilter.cpp.i
+
+.PHONY : MedianFilter.i
+
+# target to preprocess a source file
+MedianFilter.cpp.i:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/MedianFilter.cpp.i
+.PHONY : MedianFilter.cpp.i
+
+MedianFilter.s: MedianFilter.cpp.s
+
+.PHONY : MedianFilter.s
+
+# target to generate assembly for a file
+MedianFilter.cpp.s:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/MedianFilter.cpp.s
+.PHONY : MedianFilter.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -239,6 +293,9 @@ help:
 	@echo ... median
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Filter.obj
+	@echo ... Filter.i
+	@echo ... Filter.s
 	@echo ... Image.obj
 	@echo ... Image.i
 	@echo ... Image.s
@@ -248,6 +305,9 @@ help:
 	@echo ... ImageParser.obj
 	@echo ... ImageParser.i
 	@echo ... ImageParser.s
+	@echo ... MedianFilter.obj
+	@echo ... MedianFilter.i
+	@echo ... MedianFilter.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

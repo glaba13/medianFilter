@@ -6,23 +6,43 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Guri/Desktop/proj/median/Filter.h
+
 C:/Users/Guri/Desktop/proj/median/Image.cpp
 Image.h
 C:/Users/Guri/Desktop/proj/median/Image.h
+vector
+-
+algorithm
+-
 
 C:/Users/Guri/Desktop/proj/median/Image.h
-
-C:/Users/Guri/Desktop/proj/median/ImageBuilder.cpp
-ImageBuilder.h
-C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
+Filter.h
+C:/Users/Guri/Desktop/proj/median/Filter.h
 
 C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
+string
+-
+fstream
+-
+Image.h
+C:/Users/Guri/Desktop/proj/median/Image.h
 
-C:/Users/Guri/Desktop/proj/median/ImageParser.cpp
-ImageParser.h
 C:/Users/Guri/Desktop/proj/median/ImageParser.h
-
-C:/Users/Guri/Desktop/proj/median/ImageParser.h
+string
+-
+iostream
+-
+fstream
+-
+vector
+-
+algorithm
+-
+sstream
+-
+Image.h
+C:/Users/Guri/Desktop/proj/median/Image.h
 
 C:/Users/Guri/Desktop/proj/median/main.cpp
 iostream
@@ -35,4 +55,8 @@ algorithm
 -
 sstream
 -
+ImageBuilder.h
+C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
+ImageParser.h
+C:/Users/Guri/Desktop/proj/median/ImageParser.h
 

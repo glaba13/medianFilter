@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/median.dir/ImageParser.cpp.obj"
   "CMakeFiles/median.dir/ImageBuilder.cpp.obj"
   "CMakeFiles/median.dir/Image.cpp.obj"
+  "CMakeFiles/median.dir/Filter.cpp.obj"
+  "CMakeFiles/median.dir/MedianFilter.cpp.obj"
   "median.pdb"
   "median.exe"
   "median.exe.manifest"

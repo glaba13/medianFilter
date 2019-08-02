@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/Filter.cpp">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/Filter.h">
+			<Option target="median"/>
+		</Unit>
 		<Unit filename="C:/Users/Guri/Desktop/proj/median/Image.cpp">
 			<Option target="median"/>
 		</Unit>
@@ -96,6 +102,12 @@
 			<Option target="median"/>
 		</Unit>
 		<Unit filename="C:/Users/Guri/Desktop/proj/median/ImageParser.h">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/MedianFilter.cpp">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/MedianFilter.h">
 			<Option target="median"/>
 		</Unit>
 		<Unit filename="C:/Users/Guri/Desktop/proj/median/main.cpp">
