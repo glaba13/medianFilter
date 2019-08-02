@@ -14,13 +14,23 @@
 #include "Image.h"
 
 using namespace std;
+
+
+struct header {
+    unsigned char * non_p;
+    unsigned int offset;
+};
+
 class ImageParser {
 public:
     ImageParser(string filename);
-    Image getImage();
+    Image *getImage();
+    ~ImageParser();
+    header *getHeader();
 private:
     Image img;
-};
+    struct header m_header;
 
+};
 
 #endif //MEDIAN_IMAGEPARSER_H

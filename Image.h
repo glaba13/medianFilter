@@ -29,8 +29,6 @@ public:
     ~Image();
 
     unsigned int getTotalSize();
-    unsigned char * non_p;
-    unsigned int offset;
 
 private:
     unsigned char * m_data;

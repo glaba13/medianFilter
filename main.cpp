@@ -28,11 +28,11 @@ int main(int argCount, char *argValue[]) {
     }
 
     ImageParser ip((string(argValue[1])));
-    Image im = ip.getImage();
+    Image *im = ip.getImage();
     MedianFilter f(factor);
-    im.applyFilter(f);
+    im->applyFilter(f);
     ImageBuilder ib("out.bmp");
-    ib.writeImage(im);
+    ib.writeImage(im, ip.getHeader());
 
     //Releasing remaining allocated resources
 //    delete[] nonPixelData;

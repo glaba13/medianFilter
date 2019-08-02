@@ -13,6 +13,7 @@ CMakeFiles/median.dir/ImageBuilder.cpp.obj: ../Filter.h
 CMakeFiles/median.dir/ImageBuilder.cpp.obj: ../Image.h
 CMakeFiles/median.dir/ImageBuilder.cpp.obj: ../ImageBuilder.cpp
 CMakeFiles/median.dir/ImageBuilder.cpp.obj: ../ImageBuilder.h
+CMakeFiles/median.dir/ImageBuilder.cpp.obj: ../ImageParser.h
 
 CMakeFiles/median.dir/ImageParser.cpp.obj: ../Filter.h
 CMakeFiles/median.dir/ImageParser.cpp.obj: ../Image.h

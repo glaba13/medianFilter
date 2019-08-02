@@ -15,7 +15,7 @@ class ImageBuilder {
     public:
     ImageBuilder(string filename);
 
-    void writeImage(Image im);
+    void writeImage(Image *im, struct header * h = nullptr);
 
 private:
     fstream ofile;

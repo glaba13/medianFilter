@@ -38,10 +38,21 @@ ImageParser::ImageParser(string filename) {
 
     ifile.close();
     img = Image(pixelData, width, height);
-    img.non_p = nonPixelData;
-    img.offset = offset;
+    m_header.non_p = nonPixelData;
+    m_header.offset = offset;
 }
 
-Image ImageParser::getImage() {
-    return img;
+Image *ImageParser::getImage() {
+    return &img;
+}
+
+ImageParser::~ImageParser() {
+    if(!m_header.non_p) {
+        delete [] m_header.non_p;
+    }
+}
+
+
+struct header * ImageParser::getHeader() {
+    return &m_header;
 }
