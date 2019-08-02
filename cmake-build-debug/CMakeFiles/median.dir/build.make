@@ -69,19 +69,64 @@ CMakeFiles/median.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/main.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Guri\Desktop\proj\median\main.cpp -o CMakeFiles\median.dir\main.cpp.s
 
+CMakeFiles/median.dir/ImageParser.cpp.obj: CMakeFiles/median.dir/flags.make
+CMakeFiles/median.dir/ImageParser.cpp.obj: ../ImageParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Guri\Desktop\proj\median\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/median.dir/ImageParser.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\median.dir\ImageParser.cpp.obj -c C:\Users\Guri\Desktop\proj\median\ImageParser.cpp
+
+CMakeFiles/median.dir/ImageParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/median.dir/ImageParser.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Guri\Desktop\proj\median\ImageParser.cpp > CMakeFiles\median.dir\ImageParser.cpp.i
+
+CMakeFiles/median.dir/ImageParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/ImageParser.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Guri\Desktop\proj\median\ImageParser.cpp -o CMakeFiles\median.dir\ImageParser.cpp.s
+
+CMakeFiles/median.dir/ImageBuilder.cpp.obj: CMakeFiles/median.dir/flags.make
+CMakeFiles/median.dir/ImageBuilder.cpp.obj: ../ImageBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Guri\Desktop\proj\median\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/median.dir/ImageBuilder.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\median.dir\ImageBuilder.cpp.obj -c C:\Users\Guri\Desktop\proj\median\ImageBuilder.cpp
+
+CMakeFiles/median.dir/ImageBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/median.dir/ImageBuilder.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Guri\Desktop\proj\median\ImageBuilder.cpp > CMakeFiles\median.dir\ImageBuilder.cpp.i
+
+CMakeFiles/median.dir/ImageBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/ImageBuilder.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Guri\Desktop\proj\median\ImageBuilder.cpp -o CMakeFiles\median.dir\ImageBuilder.cpp.s
+
+CMakeFiles/median.dir/Image.cpp.obj: CMakeFiles/median.dir/flags.make
+CMakeFiles/median.dir/Image.cpp.obj: ../Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Guri\Desktop\proj\median\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/median.dir/Image.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\median.dir\Image.cpp.obj -c C:\Users\Guri\Desktop\proj\median\Image.cpp
+
+CMakeFiles/median.dir/Image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/median.dir/Image.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Guri\Desktop\proj\median\Image.cpp > CMakeFiles\median.dir\Image.cpp.i
+
+CMakeFiles/median.dir/Image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/Image.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-6~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Guri\Desktop\proj\median\Image.cpp -o CMakeFiles\median.dir\Image.cpp.s
+
 # Object files for target median
 median_OBJECTS = \
-"CMakeFiles/median.dir/main.cpp.obj"
+"CMakeFiles/median.dir/main.cpp.obj" \
+"CMakeFiles/median.dir/ImageParser.cpp.obj" \
+"CMakeFiles/median.dir/ImageBuilder.cpp.obj" \
+"CMakeFiles/median.dir/Image.cpp.obj"
 
 # External object files for target median
 median_EXTERNAL_OBJECTS =
 
 median.exe: CMakeFiles/median.dir/main.cpp.obj
+median.exe: CMakeFiles/median.dir/ImageParser.cpp.obj
+median.exe: CMakeFiles/median.dir/ImageBuilder.cpp.obj
+median.exe: CMakeFiles/median.dir/Image.cpp.obj
 median.exe: CMakeFiles/median.dir/build.make
 median.exe: CMakeFiles/median.dir/linklibs.rsp
 median.exe: CMakeFiles/median.dir/objects1.rsp
 median.exe: CMakeFiles/median.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Guri\Desktop\proj\median\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable median.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Guri\Desktop\proj\median\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable median.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\median.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

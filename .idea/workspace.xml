@@ -44,7 +44,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="median" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="C:\Users\Guri\Pictures\ex\rd.bmp -k8" PASS_PARENT_ENVS_2="true" PROJECT_NAME="median" TARGET_NAME="median" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="median" RUN_TARGET_NAME="median">
+    <configuration name="median" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="C:\Users\Guri\Pictures\ex\rd.bmp -k5" PASS_PARENT_ENVS_2="true" PROJECT_NAME="median" TARGET_NAME="median" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="median" RUN_TARGET_NAME="median">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -60,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564708597210</updated>
-      <workItem from="1564708604404" duration="2601000" />
+      <workItem from="1564708604404" duration="4377000" />
     </task>
     <servers />
   </component>
@@ -83,7 +83,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>97</line>
+          <line>100</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

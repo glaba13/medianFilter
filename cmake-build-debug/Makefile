@@ -122,6 +122,87 @@ median/fast:
 	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/build
 .PHONY : median/fast
 
+Image.obj: Image.cpp.obj
+
+.PHONY : Image.obj
+
+# target to build an object file
+Image.cpp.obj:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/Image.cpp.obj
+.PHONY : Image.cpp.obj
+
+Image.i: Image.cpp.i
+
+.PHONY : Image.i
+
+# target to preprocess a source file
+Image.cpp.i:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/Image.cpp.i
+.PHONY : Image.cpp.i
+
+Image.s: Image.cpp.s
+
+.PHONY : Image.s
+
+# target to generate assembly for a file
+Image.cpp.s:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/Image.cpp.s
+.PHONY : Image.cpp.s
+
+ImageBuilder.obj: ImageBuilder.cpp.obj
+
+.PHONY : ImageBuilder.obj
+
+# target to build an object file
+ImageBuilder.cpp.obj:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageBuilder.cpp.obj
+.PHONY : ImageBuilder.cpp.obj
+
+ImageBuilder.i: ImageBuilder.cpp.i
+
+.PHONY : ImageBuilder.i
+
+# target to preprocess a source file
+ImageBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageBuilder.cpp.i
+.PHONY : ImageBuilder.cpp.i
+
+ImageBuilder.s: ImageBuilder.cpp.s
+
+.PHONY : ImageBuilder.s
+
+# target to generate assembly for a file
+ImageBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageBuilder.cpp.s
+.PHONY : ImageBuilder.cpp.s
+
+ImageParser.obj: ImageParser.cpp.obj
+
+.PHONY : ImageParser.obj
+
+# target to build an object file
+ImageParser.cpp.obj:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageParser.cpp.obj
+.PHONY : ImageParser.cpp.obj
+
+ImageParser.i: ImageParser.cpp.i
+
+.PHONY : ImageParser.i
+
+# target to preprocess a source file
+ImageParser.cpp.i:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageParser.cpp.i
+.PHONY : ImageParser.cpp.i
+
+ImageParser.s: ImageParser.cpp.s
+
+.PHONY : ImageParser.s
+
+# target to generate assembly for a file
+ImageParser.cpp.s:
+	$(MAKE) -f CMakeFiles\median.dir\build.make CMakeFiles/median.dir/ImageParser.cpp.s
+.PHONY : ImageParser.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +239,15 @@ help:
 	@echo ... median
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Image.obj
+	@echo ... Image.i
+	@echo ... Image.s
+	@echo ... ImageBuilder.obj
+	@echo ... ImageBuilder.i
+	@echo ... ImageBuilder.s
+	@echo ... ImageParser.obj
+	@echo ... ImageParser.i
+	@echo ... ImageParser.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

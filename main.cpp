@@ -60,7 +60,10 @@ int main(int argCount, char *argValue[]) {
     ifile.seekg(0);
     ifile.read((char *) nonPixelData, offset);
     unsigned char *pixelData = new unsigned char[pixelDataSize];
+    unsigned char *pixelDataNew = new unsigned char[pixelDataSize];
     ifile.read((char *) pixelData, pixelDataSize);
+    for (int i = 0; i < pixelDataSize; i ++)
+        pixelDataNew[i] = pixelData[i];
     ifile.close();
 
     //Applying filter to the data.
@@ -88,21 +91,22 @@ int main(int argCount, char *argValue[]) {
             sort(g.begin(), g.end());
             sort(b.begin(), b.end());
             int med_indx = (factor * factor) / 2;
-            pixelData[index] = r[med_indx];
-            pixelData[index + 1] = g[med_indx];
-            pixelData[index + 2] = b[med_indx];
+            pixelDataNew[index] = r[med_indx];
+            pixelDataNew[index + 1] = g[med_indx];
+            pixelDataNew[index + 2] = b[med_indx];
         }
     }
 
     //Writing both sections into the output file
     ofile.seekg(0);
     ofile.write((char *) nonPixelData, offset);
-    ofile.write((char *) pixelData, pixelDataSize);
+    ofile.write((char *) pixelDataNew, pixelDataSize);
     ofile.close();
 
     //Releasing remaining allocated resources
     delete[] nonPixelData;
     delete[] pixelData;
+    delete[] pixelDataNew;
 
     return 0;
 }

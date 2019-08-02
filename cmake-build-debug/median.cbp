@@ -80,6 +80,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/Image.cpp">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/Image.h">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/ImageBuilder.cpp">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/ImageBuilder.h">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/ImageParser.cpp">
+			<Option target="median"/>
+		</Unit>
+		<Unit filename="C:/Users/Guri/Desktop/proj/median/ImageParser.h">
+			<Option target="median"/>
+		</Unit>
 		<Unit filename="C:/Users/Guri/Desktop/proj/median/main.cpp">
 			<Option target="median"/>
 		</Unit>
