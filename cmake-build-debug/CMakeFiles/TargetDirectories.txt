@@ -1,0 +1,3 @@
+C:/Users/Guri/Desktop/proj/median/cmake-build-debug/CMakeFiles/median.dir
+C:/Users/Guri/Desktop/proj/median/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Guri/Desktop/proj/median/cmake-build-debug/CMakeFiles/rebuild_cache.dir
