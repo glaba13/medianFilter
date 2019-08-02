@@ -5,6 +5,7 @@
 #include <sstream>
 #include "ImageBuilder.h"
 #include "ImageParser.h"
+#include "MedianFilter.h"
 
 using namespace std;
 #define K_AVG          "-k"
@@ -28,7 +29,7 @@ int main(int argCount, char *argValue[]) {
 
     ImageParser ip((string(argValue[1])));
     Image im = ip.getImage();
-    Filter f;
+    MedianFilter f(factor);
     im.applyFilter(f);
     ImageBuilder ib("out.bmp");
     ib.writeImage(im);

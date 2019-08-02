@@ -8,6 +8,13 @@
 
 #include "Filter.h"
 
+class Filter;
+typedef struct Pixel {
+    unsigned char r;
+    unsigned char g;
+    unsigned char b;
+}Pixel;
+
 class Image {
 public:
     Image(unsigned char * data,  unsigned int width,  unsigned int height);
@@ -18,7 +25,7 @@ public:
     int getHeight() const { return m_height; }
     unsigned char * getData() const { return m_data; }
     void resize(unsigned int width, unsigned int height);
-    void applyFilter(Filter f);
+    void applyFilter(Filter &f);
     ~Image();
 
     unsigned int getTotalSize();

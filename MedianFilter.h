@@ -6,7 +6,15 @@
 #define MEDIAN_MEDIANFILTER_H
 
 
-class MedianFilter {
+#include "Filter.h"
+
+class MedianFilter : public Filter{
+public:
+    MedianFilter(unsigned int factor = 3);
+    unsigned int getFactor() const { return m_factor;}
+    struct Pixel apply(Image *im, unsigned int i, unsigned int j) override;
+private:
+    unsigned int m_factor;
 
 };
 

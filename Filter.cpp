@@ -3,3 +3,7 @@
 //
 
 #include "Filter.h"
+
+Filter::Filter(unsigned int m, unsigned int n)  : m_m (m), m_n (n){
+
+}

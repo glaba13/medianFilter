@@ -20,7 +20,7 @@ Image::~Image() {
 }
 
 void Image::resize(unsigned int width, unsigned int height) {
-
+    //TODO
 }
 
 
@@ -28,7 +28,7 @@ unsigned int Image::getTotalSize() {
     return m_width*m_height*3;
 }
 
-void Image::applyFilter(Filter f) {
+void Image::applyFilter(Filter &f) {
 
     //Applying filter to the data.
     //In this example no filter is applied instead, a red border is drawn).
@@ -38,31 +38,20 @@ void Image::applyFilter(Filter f) {
     unsigned int pixelDataSize = m_width * m_height*3;
     unsigned int jCount = pixelDataSize / rowSize;
     unsigned int iCount = pixelDataSize / jCount;
-    unsigned char *pixelDataNew = new unsigned char[pixelDataSize];
+    auto *pixelDataNew = new unsigned char[pixelDataSize];
     for (int i = 0; i < pixelDataSize; i ++)
          pixelDataNew[i] = m_data[i];
-    int factor = 3;
-    for (unsigned int j = 0; j < jCount - (factor - 1); j++) {
-        for (unsigned int i = 0; i < iCount - (factor - 1) * 3; i += 3) {
-            vector<int> r;
-            vector<int> g;
-            vector<int> b;
-            unsigned int index = (j + factor / 2) * iCount + i + (factor / 2) * 3;
-            for (unsigned int k1 = 0; k1 < factor; k1++) {
-                for (unsigned int k2 = 0; k2 < factor; k2++) {
-                    unsigned int inx = (j + k1) * iCount + i + 3 * k2;
-                    r.push_back(m_data[inx]);
-                    g.push_back(m_data[inx + 1]);
-                    b.push_back(m_data[inx + 2]);
-                }
-            }
-            sort(r.begin(), r.end());
-            sort(g.begin(), g.end());
-            sort(b.begin(), b.end());
-            int med_indx = (factor * factor) / 2;
-            pixelDataNew[index] = r[med_indx];
-            pixelDataNew[index + 1] = g[med_indx];
-            pixelDataNew[index + 2] = b[med_indx];
+    unsigned int factor_m = f.getM();
+    unsigned int factor_n = f.getN();
+
+    for (unsigned int j = 0; j < jCount - (factor_m - 1); j++) {
+        for (unsigned int i = 0; i < iCount - (factor_n - 1) * 3; i += 3) {
+
+            unsigned int index = (j + factor_m / 2) * iCount + i + (factor_n / 2) * 3;
+            Pixel p = f.apply(this, i, j);
+            pixelDataNew[index] = p.r;
+            pixelDataNew[index + 1] = p.g;
+            pixelDataNew[index + 2] = p.b;
         }
     }
     if(!m_data) delete [] m_data;

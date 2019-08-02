@@ -6,8 +6,17 @@
 #define MEDIAN_FILTER_H
 
 
+#include "Image.h"
+class Image;
 class Filter {
-
+public:
+    Filter(unsigned int m, unsigned int n);
+    unsigned int getM() const { return m_m;}
+    unsigned int getN() const { return m_n;}
+    virtual struct Pixel apply(Image *im, unsigned int i, unsigned int j) = 0;
+private:
+    unsigned int m_m;
+    unsigned int m_n;
 };
 
 

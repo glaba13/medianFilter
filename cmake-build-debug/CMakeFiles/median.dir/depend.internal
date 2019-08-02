@@ -4,6 +4,7 @@
 CMakeFiles/median.dir/Filter.cpp.obj
  C:/Users/Guri/Desktop/proj/median/Filter.cpp
  C:/Users/Guri/Desktop/proj/median/Filter.h
+ C:/Users/Guri/Desktop/proj/median/Image.h
 CMakeFiles/median.dir/Image.cpp.obj
  C:/Users/Guri/Desktop/proj/median/Filter.h
  C:/Users/Guri/Desktop/proj/median/Image.cpp
@@ -19,6 +20,8 @@ CMakeFiles/median.dir/ImageParser.cpp.obj
  C:/Users/Guri/Desktop/proj/median/ImageParser.cpp
  C:/Users/Guri/Desktop/proj/median/ImageParser.h
 CMakeFiles/median.dir/MedianFilter.cpp.obj
+ C:/Users/Guri/Desktop/proj/median/Filter.h
+ C:/Users/Guri/Desktop/proj/median/Image.h
  C:/Users/Guri/Desktop/proj/median/MedianFilter.cpp
  C:/Users/Guri/Desktop/proj/median/MedianFilter.h
 CMakeFiles/median.dir/main.cpp.obj
@@ -26,4 +29,5 @@ CMakeFiles/median.dir/main.cpp.obj
  C:/Users/Guri/Desktop/proj/median/Image.h
  C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
  C:/Users/Guri/Desktop/proj/median/ImageParser.h
+ C:/Users/Guri/Desktop/proj/median/MedianFilter.h
  C:/Users/Guri/Desktop/proj/median/main.cpp

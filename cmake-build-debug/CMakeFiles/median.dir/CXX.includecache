@@ -7,56 +7,22 @@
 #IncludeRegexTransform: 
 
 C:/Users/Guri/Desktop/proj/median/Filter.h
-
-C:/Users/Guri/Desktop/proj/median/Image.cpp
 Image.h
 C:/Users/Guri/Desktop/proj/median/Image.h
-vector
--
-algorithm
--
 
 C:/Users/Guri/Desktop/proj/median/Image.h
 Filter.h
 C:/Users/Guri/Desktop/proj/median/Filter.h
 
-C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
-string
--
-fstream
--
-Image.h
-C:/Users/Guri/Desktop/proj/median/Image.h
-
-C:/Users/Guri/Desktop/proj/median/ImageParser.h
-string
--
-iostream
--
-fstream
--
+C:/Users/Guri/Desktop/proj/median/MedianFilter.cpp
+MedianFilter.h
+C:/Users/Guri/Desktop/proj/median/MedianFilter.h
 vector
 -
 algorithm
 -
-sstream
--
-Image.h
-C:/Users/Guri/Desktop/proj/median/Image.h
 
-C:/Users/Guri/Desktop/proj/median/main.cpp
-iostream
--
-fstream
--
-vector
--
-algorithm
--
-sstream
--
-ImageBuilder.h
-C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
-ImageParser.h
-C:/Users/Guri/Desktop/proj/median/ImageParser.h
+C:/Users/Guri/Desktop/proj/median/MedianFilter.h
+Filter.h
+C:/Users/Guri/Desktop/proj/median/Filter.h
 
