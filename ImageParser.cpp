@@ -4,6 +4,10 @@
 
 #include "ImageParser.h"
 
+/**
+ * Image parser and desirilizer
+ * @param filename : input filename image
+ */
 ImageParser::ImageParser(string filename) {
     fstream ifile(filename, ios_base::in | ios_base::binary);
     if (!ifile.is_open()) {
@@ -33,7 +37,7 @@ ImageParser::ImageParser(string filename) {
     ifile.seekg(0);
     ifile.read((char *) nonPixelData, offset);
     unsigned char *pixelData = new unsigned char[pixelDataSize];
-  //
+    //
     ifile.read((char *) pixelData, pixelDataSize);
 
     ifile.close();
@@ -42,17 +46,27 @@ ImageParser::ImageParser(string filename) {
     m_header.offset = offset;
 }
 
+/**
+ * Returns the parsed image
+ * @return  image
+ */
 Image *ImageParser::getImage() {
     return &img;
 }
 
+/**
+ * Destructor, release header info
+ */
 ImageParser::~ImageParser() {
-    if(!m_header.non_p) {
-        delete [] m_header.non_p;
+    if (!m_header.non_p) {
+        delete[] m_header.non_p;
     }
 }
 
-
-struct header * ImageParser::getHeader() {
+/**
+ * Get header info
+ * @return  header
+ */
+struct header *ImageParser::getHeader() {
     return &m_header;
 }

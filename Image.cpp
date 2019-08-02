@@ -5,42 +5,54 @@
 #include "Image.h"
 #include <vector>
 #include <algorithm>
+
 using namespace std;
+
+/**
+ * Constuctor
+ * @param data : image data
+ * @param width  : width of img
+ * @param height  : height of img
+ */
 Image::Image(unsigned char *data, unsigned int width, unsigned int height) :
-    m_data(data), m_width(width), m_height(height)
-{
+        m_data(data), m_width(width), m_height(height) {
 
 }
 
-
+/**
+ * Destructor
+ */
 Image::~Image() {
-    if(!m_data) {
-        delete [] m_data;
+    if (!m_data) {
+        delete[] m_data;
     }
 }
 
+/**
+ * Resize function, to be implemented
+ * @param width : destination width
+ * @param height : destination height
+ */
 void Image::resize(unsigned int width, unsigned int height) {
     //TODO
 }
 
-
+/**
+ * @return total size of img data
+ */
 unsigned int Image::getTotalSize() {
-    return m_width*m_height*3;
+    return m_width * m_height * 3;
 }
 
+//Applying filter to the data and modify img
 void Image::applyFilter(Filter &f) {
-
-    //Applying filter to the data.
-    //In this example no filter is applied instead, a red border is drawn).
-    //Remove/change the code below in order to apply the required filter
-    //Indices are distributed from the lower left to the upper right corner
     unsigned int rowSize = m_width * 3;
-    unsigned int pixelDataSize = m_width * m_height*3;
+    unsigned int pixelDataSize = m_width * m_height * 3;
     unsigned int jCount = pixelDataSize / rowSize;
     unsigned int iCount = pixelDataSize / jCount;
-    auto *pixelDataNew = new unsigned char[pixelDataSize];
-    for (int i = 0; i < pixelDataSize; i ++)
-         pixelDataNew[i] = m_data[i];
+    auto *pixelDataNew = new unsigned char[pixelDataSize]; // new img
+    for (int i = 0; i < pixelDataSize; i++)
+        pixelDataNew[i] = m_data[i];
     unsigned int factor_m = f.getM();
     unsigned int factor_n = f.getN();
 
@@ -54,10 +66,13 @@ void Image::applyFilter(Filter &f) {
             pixelDataNew[index + 2] = p.b;
         }
     }
-    if(!m_data) delete [] m_data;
+    if (!m_data) delete[] m_data; // release the old one
     m_data = pixelDataNew;
 }
 
+/**
+ * Empty constuctor
+ */
 Image::Image() : m_data(nullptr), m_width(0), m_height(0) {
 
 }

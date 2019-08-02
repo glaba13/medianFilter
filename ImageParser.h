@@ -15,19 +15,38 @@
 
 using namespace std;
 
-
+/**
+ * Helper struct for header [should be avoided]
+ */
 struct header {
-    unsigned char * non_p;
+    unsigned char *non_p;
     unsigned int offset;
 };
 
 class ImageParser {
 public:
+    /**
+     * Constuctor
+     * @param filename : input filename
+     */
     ImageParser(string filename);
+
+/**
+ * Returnes the parsed image
+ * @return image
+ */
     Image *getImage();
+
     ~ImageParser();
+
+/**
+ * Getter of header info
+ * @return header
+ */
     header *getHeader();
+
 private:
+    //Private members
     Image img;
     struct header m_header;
 

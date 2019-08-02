@@ -9,29 +9,68 @@
 #include "Filter.h"
 
 class Filter;
+
+/**
+ * Pixel rgb struct
+ */
 typedef struct Pixel {
     unsigned char r;
     unsigned char g;
     unsigned char b;
-}Pixel;
+} Pixel;
 
 class Image {
 public:
-    Image(unsigned char * data,  unsigned int width,  unsigned int height);
+    /**
+     * Constuctor
+     * @param data : data values
+     * @param width
+     * @param height
+     */
+    Image(unsigned char *data, unsigned int width, unsigned int height);
 
     Image();
 
+/**
+ * Width getter
+ * @return  width
+ */
     int getWidth() const { return m_width; }
+
+/**
+ * Height getter
+ * @return height
+ */
     int getHeight() const { return m_height; }
-    unsigned char * getData() const { return m_data; }
+
+/**
+ * Data getter
+ * @return data
+ */
+    unsigned char *getData() const { return m_data; }
+
+/**
+ * Resize function
+ * @param width : to be resized
+ * @param height : to be resized
+ */
     void resize(unsigned int width, unsigned int height);
+
+/**
+ * Apply filter function as convolution
+ * @param f  filter
+ */
     void applyFilter(Filter &f);
+
+/**
+ * Destuctor
+ */
     ~Image();
 
     unsigned int getTotalSize();
 
 private:
-    unsigned char * m_data;
+    unsigned char *m_data;
     unsigned int m_width;
     unsigned int m_height;
 

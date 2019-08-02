@@ -49,10 +49,6 @@ fstream
 -
 vector
 -
-algorithm
--
-sstream
--
 ImageBuilder.h
 C:/Users/Guri/Desktop/proj/median/ImageBuilder.h
 ImageParser.h

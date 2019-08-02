@@ -12,12 +12,22 @@
 using namespace std;
 
 class ImageBuilder {
-    public:
+public:
+    /**
+     * Constuctor
+     * @param filename: output fil ename
+     */
     ImageBuilder(string filename);
 
-    void writeImage(Image *im, struct header * h = nullptr);
+    /**
+     * Image to be writen
+     * @param im  image
+     * @param h  header
+     */
+    void writeImage(Image *im, struct header *h = nullptr);
 
 private:
+    //private variables
     fstream ofile;
 
 };

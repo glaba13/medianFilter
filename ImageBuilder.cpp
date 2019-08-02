@@ -3,16 +3,15 @@
 //
 
 #include "ImageBuilder.h"
-
 #include <string>
 #include <iostream>
-#include <fstream>
-#include <vector>
-#include <algorithm>
-#include <sstream>
 #include "Image.h"
 #include "ImageParser.h"
 
+/**
+ * Output image file builder with filename
+ * @param filename
+ */
 ImageBuilder::ImageBuilder(string filename) {
     ofile = fstream(filename, ios_base::out | ios_base::binary);
     if (!ofile.is_open()) {
@@ -20,12 +19,15 @@ ImageBuilder::ImageBuilder(string filename) {
     }
 }
 
-
-
-void ImageBuilder::writeImage(Image *im, struct header * h) {
+/**
+ * Write the image into file
+ * @param im  image data
+ * @param h  header (should be avoided)
+ */
+void ImageBuilder::writeImage(Image *im, struct header *h) {
     //Writing both sections into the output file
     ofile.seekg(0);
-    if(h) {
+    if (h) {
         ofile.write((char *) h->non_p, h->offset);
     }
     ofile.write((char *) im->getData(), im->getTotalSize());
